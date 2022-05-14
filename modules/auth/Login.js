@@ -65,7 +65,9 @@ const loginAPI = payload => axios.post(
 
 function* logout(){
     try{
+        alert(' logout 실행중 ')
         const response = yield call(logoutAPI)
+        alert(` 로그아웃 성공: ${response.data.message}`)
         yield put({type: LOGOUT_SUCCESS})
         yield put({type: DELETE_TOKEN})
         yield put(window.location.href= "/")
@@ -123,6 +125,7 @@ const login = (state = initialState, action) => {
                 ...action.payload
             }
         case LOGIN_SUCCESS:
+            alert(' ### 사가 로그인 성공 ### ' + JSON.stringify(action.payload))
             return {
                 ...state,
                 loginUser: action.payload,

@@ -51,7 +51,7 @@ export function Profile({loginUser}) {
                         <LockOutlinedIcon/>
                     </Avatar>
                     <Typography component="h1" variant="h5">
-                    User Profile Card
+                    User Profile
                     </Typography>
                     <Box
                         component="form"
@@ -67,7 +67,7 @@ export function Profile({loginUser}) {
 
                         <div className="styles.card">
                             <img
-                                src="https://www.w3schools.com/w3images/team2.jpg"
+                                src="https://cdn-icons-png.flaticon.com/512/257/257787.png"
                                 alt="John"
                                 style={{
                                     width: "100%"
@@ -75,7 +75,7 @@ export function Profile({loginUser}) {
                             <h1>
                             {loginUser.name}
                             </h1>
-                            <p className="title">CEO & Founder, Example</p>
+                            <p className="title">Student</p>
                             <p>이메일 : {loginUser.email}</p>
                             <p>전화번호 : {loginUser.phone}</p>
                             <p>생년월일 : {loginUser.birth}</p>

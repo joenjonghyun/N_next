@@ -77,9 +77,9 @@ export function Nav() {
         } else {
             setUserUrls({
                 subTitles: [
-                    "프로필", "정보수정", "회원탈퇴"
+                    "프로필"
                 ],
-                urls: ["/user/profile", "/user/modifyUser", "/auth/delUser"]
+                urls: ["/user/profile"]
             })
             setImageInfos(
                 {imageUrl: 'https://www.w3schools.com/howto/img_avatar.png', imageTitle: 'users'}
