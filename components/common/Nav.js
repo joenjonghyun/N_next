@@ -23,9 +23,9 @@ const HomeIcon = createSvgIcon(
 
 const basicSettings = {
     subTitles: [
-      '게시판'
+      'Note','login'
     ],
-    urls: ['/board/list']
+    urls: ['/note/note']
 };
 
 export function Nav() {
@@ -202,7 +202,7 @@ export function Nav() {
                                 color: 'white',
                                 display: 'block'
                             }}>
-                            로그아웃
+                            
                         </Button>
                     </Box>}
                 </Toolbar>
